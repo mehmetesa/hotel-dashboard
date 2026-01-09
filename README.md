@@ -1,73 +1,65 @@
-# React + TypeScript + Vite
+# 🏨 H-care: Modern Hotel Management Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+H-care, otel yöneticileri için tasarlanmış profesyonel, kullanıcı dostu ve modern bir yönetim panelidir. React, Vite, Tailwind CSS ve Shadcn/UI kullanılarak geliştirilen bu uygulama, gerçek zamanlı oda takibi ve gelir analizi sunar.
 
-Currently, two official plugins are available:
+![Dashboard Preview](public/vite.svg) <!-- Buraya ileride ekran görüntüsü linkini ekleyebilirsiniz -->
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Özellikler
 
-## React Compiler
+- **🏷️ Akıllı Oda Yönetimi:** Odaların doluluk durumunu anlık takip edin, yeni kayıtlar oluşturun.
+- **💰 Gelir Analizi:** Günlük ve haftalık gelir projeksiyonlarını interaktif grafiklerle izleyin.
+- **⏳ Gecikme Uyarıları:** Çıkış saati geçen misafirler için otomatik kırmızı alarm ve uyarı sistemi.
+- **🌓 Dark/Light Mode:** Göz yormayan profesyonel karanlık mod ve berrak aydınlık mod desteği.
+- **🌍 Çoklu Dil Desteği:** Türkçe ve İngilizce dil seçenekleri arasında anlık geçiş.
+- **📜 Aktivite Akışı:** Yapılan tüm işlemlerin doğal dilde detaylı kaydı.
+- **⚙️ Kişiselleştirme:** Ayarlar panelinden otel adını ve yönetici bilgilerini anında güncelleyin.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Teknolojiler
 
-## Expanding the ESLint configuration
+- **React 18** (Vite ile süper hızlı çalışma)
+- **Tailwind CSS** (Modern & Responsive tasarım)
+- **Shadcn UI & Lucide Icons** (Premium bileşen kütüphanesi)
+- **Recharts** (Veri görselleştirme ve grafikler)
+- **Date-fns** (Gelişmiş tarih yönetimi)
+- **Local Storage** (Veri kalıcılığı - Sunucu gerektirmez!)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Nasıl Kullanılır? (Geliştiriciler İçin)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Bu projeyi kendi bilgisayarınızda çalıştırmak isterseniz şu adımları izleyin:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+1. **Repoyu Klonlayın:**
+   ```bash
+   git clone https://github.com/mehmetesa/hotel-dashboard.git
+   ```
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+2. **Proje Klasörüne Girin:**
+   ```bash
+   cd hotel-dashboard
+   ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+3. **Bağımlılıkları Yükleyin:**
+   ```bash
+   npm install
+   ```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+4. **Projeyi Başlatın:**
+   ```bash
+   npm run dev
+   ```
+   *Uygulama otomatik olarak `http://localhost:5173` adresinde açılacaktır.*
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+5. **Derleme (Build):**
+   ```bash
+   npm run build
+   ```
+   *Yayına hazır halini `dist` klasöründe bulabilirsiniz.*
+
+## 📈 Kullanıcı Deneyimi
+
+- Odaların üzerine tıklayarak misafir ismi ve çıkış tarihi girin.
+- Çıkış saati geçen odalar otomatik olarak parlayarak dikkat çeker.
+- Her kayıt atıldığında gelir grafiği gerçek zamanlı güncellenir.
+- Tüm veriler tarayıcınıza kaydedilir; sayfayı yenileseniz de bilgileriniz silinmez.
+
+---
+**Geliştiren:** [Mehmet Esat](https://github.com/mehmetesa)
