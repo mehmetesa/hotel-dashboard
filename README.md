@@ -1,8 +1,11 @@
-# 🏨 H-care: Modern Hotel Management Dashboard
+# 🏨 Modern Hotel Management Dashboard
 
 H-care, otel yöneticileri için tasarlanmış profesyonel, kullanıcı dostu ve modern bir yönetim panelidir. React, Vite, Tailwind CSS ve Shadcn/UI kullanılarak geliştirilen bu uygulama, gerçek zamanlı oda takibi ve gelir analizi sunar.
 
-![Dashboard Preview](public/vite.svg) <!-- Buraya ileride ekran görüntüsü linkini ekleyebilirsiniz -->
+<div align="center">
+  <img src="screenshot1.png" alt="Dashboard Overview" width="45%"/>
+  <img src="screenshot2.png" alt="Room Management" width="45%"/>
+</div> <!-- Buraya ileride ekran görüntüsü linkini ekleyebilirsiniz -->
 
 ## ✨ Özellikler
 
