@@ -4,6 +4,7 @@ H-care, otel yöneticileri için tasarlanmış profesyonel, kullanıcı dostu ve
 
 <div align="center">
   <img src="screenshot1.png" alt="Dashboard Overview" width="45%"/>
+  
   <img src="screenshot2.png" alt="Room Management" width="45%"/>
 </div> <!-- Buraya ileride ekran görüntüsü linkini ekleyebilirsiniz -->
 
